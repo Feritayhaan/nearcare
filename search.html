@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ara – NearCare</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">➕ NearCare</div>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="search.html" class="active">Ara</a>
+      <a href="about.html">Hakkında</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero small">
+      <h1>Çevrendeki hastane ve eczaneler</h1>
+      <p>Butona bas, konum iznini onayla.</p>
+      <button id="btn" class="btn white">🔍 Eczane / Hastane Ara</button>
+    </section>
+
+    <div id="status" role="status"></div>
+    <div id="duty"><a class="btn green" id="dutyLink" target="_blank" rel="noopener">💊 Bölgemdeki nöbetçi eczaneleri göster</a></div>
+
+    <div class="layout">
+      <div id="results"></div>
+      <div id="map"></div>
+    </div>
+
+    <p class="note">Veriler OpenStreetMap'ten gelir, eksik veya eski olabilir. Nöbetçi bilgisi OpenStreetMap'te bulunmaz; yeşil bağlantı ilçenize göre arama açar. Gitmeden önce arayın. Acil durumda 112.</p>
+  </main>
+
+  <footer>&copy; 2026 NearCare – YBS215 Dönem Projesi.</footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

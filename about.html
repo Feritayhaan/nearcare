@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hakkında – NearCare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">➕ NearCare</div>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="search.html">Ara</a>
+      <a href="about.html" class="active">Hakkında</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Hakkında</h1>
+
+    <h2>Amaç</h2>
+    <p>Acil durumlarda veya gece saatlerinde en yakın hastane ya da eczanenin nerede olduğunu bilmek zor olabilir. NearCare bunu birkaç tıkla gösterir.</p>
+
+    <h2>Nasıl çalışır?</h2>
+    <ol>
+      <li>Tarayıcının Geolocation API'si konumunu algılar (yalnızca izin verirsen).</li>
+      <li>Yakındaki hastane ve eczaneler Overpass API ile OpenStreetMap'ten istenir.</li>
+      <li>Sonuçlar mesafeye göre sıralanır, Leaflet haritasında ve listede gösterilir.</li>
+    </ol>
+
+    <h2>Gizlilik</h2>
+    <p>Konumun yalnızca tarayıcında arama yapmak için kullanılır, NearCare tarafından saklanmaz.</p>
+
+    <h2>Sınırlamalar</h2>
+    <p>Veriler OpenStreetMap'ten gelir; bazı yerler eksik veya güncel olmayabilir. Nöbetçi eczane bilgisi uygulamada gösterilmez, arama sayfasındaki bağlantı ilçene göre resmi listeyi aramanı sağlar. Gitmeden önce eczaneyi arayın. Acil durumda 112.</p>
+
+    <h2>Kullanılan teknolojiler</h2>
+    <ul class="plain">
+      <li>HTML5 (semantik etiketler), CSS3 (Flexbox, Grid, media query)</li>
+      <li>JavaScript (ES6, Fetch API), Geolocation API</li>
+      <li>Overpass API ve Nominatim (OpenStreetMap), Leaflet.js</li>
+      <li>Git, GitHub, GitHub Pages</li>
+    </ul>
+
+    <h2>İletişim</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Adınız" required>
+      <input type="email" placeholder="E-posta" required>
+      <textarea placeholder="Mesajınız" required></textarea>
+      <button type="submit">Gönder</button>
+      <p id="contact-msg"></p>
+    </form>
+  </main>
+
+  <footer>&copy; 2026 NearCare – YBS215 Dönem Projesi.</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
